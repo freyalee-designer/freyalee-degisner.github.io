@@ -4,10 +4,41 @@ body {
   padding: 0;
   font-size: 14px;
   overflow-x: hidden;
+  background-color: #000;
+  background-image: url("../img/100-100-5.png");
+  animation: moveBG 1s linear infinite;
 }
 * {
   box-sizing: border-box;
 }
-
+@keyframes moveBG {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 1% 1%;
+  }
+}
+.mouse-effect {
+  div {
+    width: 5px;
+    height: 5px;
+    background: #fd4782;
+    position: absolute;
+  }
+}
+span {
+  position: relative;
+  width: 5px;
+  height: 5px;
+  background-color: red;
+}
+.follow {
+  display: none;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: red;
+}
 @import "tablet.scss";
 @import "mobile.scss";
