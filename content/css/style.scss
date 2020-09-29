@@ -5,11 +5,75 @@ body {
   font-size: 14px;
   overflow-x: hidden;
   background-color: #000;
-  background-image: url("../img/100-100-5.png");
-  animation: moveBG 1s linear infinite;
+  //   background-image: url("../img/100-100-5.png");
+  //   animation: moveBG 1s linear infinite;
 }
+
+$pink: #f7a6b9;
+@font-face {
+  font-family: Chathura;
+  src: url("/content/font/Chathura-Regular.ttf");
+}
+
+@font-face {
+  font-family: FugazOne;
+  src: url("/content/font/FugazOne-Regular.ttf");
+}
+
+.Chathura {
+  font-family: Chathura;
+}
+
+.FugazOne {
+  font-family: FugazOne;
+}
+
 * {
   box-sizing: border-box;
+}
+
+.container {
+}
+
+.section-width {
+  width: 1580px;
+  display: table;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.top-header {
+  .text {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0 0 55px;
+    font {
+      font-size: 30pt;
+      color: #fff;
+    }
+  }
+  .header-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .line {
+      background: #fff;
+      height: 1px;
+      width: 100%;
+    }
+  }
+}
+
+.title-box {
+  .title {
+    padding: 38.5px 220px;
+    font-size: 120px;
+    color: #fff;
+    font {
+      color: $pink;
+    }
+  }
 }
 @keyframes moveBG {
   from {
@@ -19,26 +83,17 @@ body {
     background-position: 1% 1%;
   }
 }
-.mouse-effect {
-  div {
-    width: 5px;
-    height: 5px;
-    background: #fd4782;
-    position: absolute;
+.brush {
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  &.active {
+    opacity: 1;
   }
-}
-span {
-  position: relative;
-  width: 5px;
-  height: 5px;
-  background-color: red;
-}
-.follow {
-  display: none;
-  position: absolute;
-  width: 5px;
-  height: 5px;
-  background-color: red;
 }
 @import "tablet.scss";
 @import "mobile.scss";
