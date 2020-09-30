@@ -1,0 +1,67 @@
+{
+  "data": [
+    {
+      "sno": 1,
+      "title": "2020 - WEBSITE",
+      "txt": "形象/購物網站",
+      "img": "",
+      "content": "Bowbow"
+    },
+    {
+      "sno": 2,
+      "title": "2020 - App介面",
+      "txt": "AR 掃描APP",
+      "img": "",
+      "content": "Magic AR App"
+    },
+    {
+      "sno": 3,
+      "title": "2020 - Editor",
+      "txt": "明信片編輯器",
+      "img": "",
+      "content": "Postcard<br>Editor"
+    },
+    {
+      "sno": 4,
+      "title": "2019 - WEBSITE",
+      "txt": "科技物聯網-形象網站",
+      "img": "",
+      "content": "EcoLumina"
+    },
+    {
+      "sno": 5,
+      "title": "2019 - WEBSITE",
+      "txt": "華碩-商品形象網站",
+      "img": "",
+      "content": "Blue Cave"
+    },
+    {
+      "sno": 6,
+      "title": "2018 - WEBSITE",
+      "txt": "華碩-電競形象網站",
+      "img": "",
+      "content": "ROG Strix X299"
+    },
+    {
+      "sno": 7,
+      "title": "2018 - WEBSITE",
+      "txt": "手做工具箱-形象網站",
+      "img": "",
+      "content": "Handyman"
+    },
+    {
+      "sno": 8,
+      "title": "2017 - WEBSITE",
+      "txt": "電子芯片-形象網站",
+      "img": "",
+      "content": "Axiometk"
+    },
+    {
+      "sno": 9,
+      "title": "2016 - WEBSITE",
+      "txt": "法國身體香氛-形象網站",
+      "img": "",
+      "content": "Theophlie<br>Berthon"
+    }
+  ]
+}

@@ -1,3 +1,6 @@
+import Vue from "vue";
+import axios from "axios";
+import $ from "jquery";
 $(window).on("mousemove", function() {
   if (!$(".brush").hasClass("active")) {
     setTimeout(function() {
@@ -5,10 +8,25 @@ $(window).on("mousemove", function() {
     }, 200);
   }
 });
-$(function() {
-  createBrush();
-  //   createBG();
-  //   createBackground();
+
+var app = new Vue({
+  el: "#app",
+  data() {
+    return {
+      workData: {},
+    };
+  },
+  methods: {},
+  created() {
+    const vm = this;
+    vm.$nextTick(function() {
+      axios.get("/content/json/data.json").then((response) => {
+        console.log(response);
+        vm.workData = response.data.data;
+      });
+      createBrush();
+    });
+  },
 });
 
 // function createBackground() {

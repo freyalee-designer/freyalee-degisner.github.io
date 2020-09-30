@@ -5,42 +5,109 @@
       name="viewport"
       content="width=device-width,initial-scale=1,
             maximum-scale=1"
-    /></head
-  ><link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&amp;display=swap"
-    rel="stylesheet"
-  />
-  <script
-    src="https://code.jquery.com/jquery-3.5.1.min.js"
-    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.3.3/pixi.min.js"
-    integrity="sha512-J7UHpLx39bpqtP+aWP6yIuXroFk0XPkDQaS9zDthM4TVeaXstWYh556gxsXwwIwpAPSoKqVHW+eqz3B93SpyKg=="
-    crossorigin="anonymous"
-  ></script>
-  <link href="/content/css/style.css" rel="stylesheet" />
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.3.3/pixi.min.js"
+      integrity="sha512-J7UHpLx39bpqtP+aWP6yIuXroFk0XPkDQaS9zDthM4TVeaXstWYh556gxsXwwIwpAPSoKqVHW+eqz3B93SpyKg=="
+      crossorigin="anonymous"
+    ></script>
+    <link href="/content/css/style.css" rel="stylesheet" />
+  </head>
 
   <body>
-    <div class="container">
-      <div class="section top-header section-width">
-        <div class="header-box">
-          <img src="content/img/pink_block.png" />
-          <div class="line"></div>
-          <img src="content/img/pink_block.png" />
+    <div id="app">
+      <div class="container">
+        <div class="section top-header section-width">
+          <div class="header-box">
+            <img class="pink-block" src="content/img/pink_block.png" />
+            <div class="line"></div>
+            <img class="pink-block" src="content/img/pink_block.png" />
+          </div>
+          <div class="text Chathura">
+            <font>2016 - 2020 Portfolio</font> <font>Hello! I'm Freya.</font>
+          </div>
+          <div class="header-box">
+            <img src="content/img/pink_block.png" />
+            <div class="line"></div>
+            <img src="content/img/pink_block.png" />
+          </div>
         </div>
-        <div class="text Chathura">
-          <font>2016 - 2020 Portfolio</font> <font>Hello! I'm Freya.</font>
+        <div class="section title-box section-width">
+          <div class="title FugazOne">
+            Visual <font class="FugazOne">Portfolio</font>
+          </div>
+          <div class="int-box">
+            <img src="content/img/diamond.png" />
+            <font>嗨! 我是Freya, 是位視覺體驗設計師</font>
+            <img src="content/img/diamond.png" />
+          </div>
         </div>
-        <div class="header-box">
-          <img src="content/img/pink_block.png" />
-          <div class="line"></div>
-          <img src="content/img/pink_block.png" />
+        <div class="section work-box section-width">
+          <div class="works" v-for="(list, index) in workData" :key="index">
+            <div class="picture">
+              <div class="float-txt FugazOne" v-html="list.content"></div>
+            </div>
+            <div class="title">{{list.title}}</div>
+            <div class="txt">{{list.txt}}</div>
+          </div>
         </div>
-      </div>
-      <div class="section title-box section-width">
-        <div class="title FugazOne">Visual <font>Portfolio</font></div>
+        <div class="section personal-box section-width">
+          <div class="header-box">
+            <img class="pink-block" src="content/img/pink_block.png" />
+            <div class="line"></div>
+            <img class="pink-block" src="content/img/pink_block.png" />
+          </div>
+          <div class="personal">
+            <div class="sticker">
+              <img src="content/img/freya.png" />
+            </div>
+            <div class="mb-show header-box">
+              <img class="pink-block" src="content/img/pink_block.png" />
+              <div class="line"></div>
+              <img class="pink-block" src="content/img/pink_block.png" />
+            </div>
+            <div class="straight">
+              <img class="pink-block" src="content/img/pink_block.png" />
+              <div class="line"></div>
+              <img class="pink-block" src="content/img/pink_block.png" />
+            </div>
+            <div class="content">
+              <div class="tw-txt">
+                <div class="txt">嗨，我是Freya</div>
+                <div class="txt">
+                  是位視覺體驗設計師，擅長解決流程體驗產生的設計問題
+                </div>
+                <div class="txt">
+                  非常享受介面設計和創作視覺的工作過程，平常也喜歡研究關於UI/UX的大小事。
+                </div>
+              </div>
+              <div class="en-txt Chathura">
+                <div class="txt">
+                  Hey! I’m freya , I’m a Visual Designer living in Taipei. I
+                  specialize in UI/UX design & branding with a keen interest in
+                  typography.
+                </div>
+                <br />
+                <div class="txt">
+                  You can also find me there :
+                  <br />Email / Instagram
+                </div>
+              </div>
+            </div>
+            <div class="mb-show header-box">
+              <img class="pink-block" src="content/img/pink_block.png" />
+              <div class="line"></div>
+              <img class="pink-block" src="content/img/pink_block.png" />
+            </div>
+          </div>
+        </div>
+        <div class="section footer section-width">
+          作品皆於任職公司時的設計，一切版權皆為過往任職公司所有。
+        </div>
       </div>
     </div>
   </body>

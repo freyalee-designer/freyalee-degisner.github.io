@@ -1,4 +1,118 @@
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1600px) and (min-width: 1441px) {
+  .section-width {
+    width: 1400px;
+  }
+  .work-box .works {
+    width: 450px;
+  }
+  .work-box .picture {
+    width: 450px;
+    height: 310px;
+  }
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1069px) {
+  .section-width {
+    width: 1000px;
+  }
+  .title-box .title {
+    padding: 38.5px 60px 0;
+  }
+  .title-box .int-box {
+    margin: 0 60px;
+  }
+  .title-box .title {
+    font-size: 50px;
+  }
+  .work-box .works {
+    width: 300px;
+  }
+  .work-box .picture {
+    width: 300px;
+    height: 200px;
+  }
+  .top-header .text font {
+    font-size: 20pt;
+  }
+  .personal-box .personal .sticker img {
+    width: 200px;
+  }
+  .personal-box .personal .sticker {
+    padding: 34px 28px;
+  }
+  .personal-box .personal .content {
+    padding: 34px 28px;
+  }
+  .personal-box .personal .content .tw-txt .txt {
+    font-size: 12px;
+  }
+  .personal-box .personal .content .en-txt .txt {
+    font-size: 20px;
+  }
+  .work-box {
+    margin-top: 0;
+  }
+  .work-box .picture .float-txt {
+    font-size: 20px;
+  }
+  .work-box .title {
+    font-size: 12px;
+  }
+  .work-box .txt {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 1068px) and (min-width: 735px) {
+  .section-width {
+    width: 700px;
+  }
+  .title-box .title {
+    padding: 38.5px 60px 0;
+  }
+  .title-box .int-box {
+    margin: 0 60px;
+  }
+  .title-box .title {
+    font-size: 50px;
+  }
+  .work-box .works {
+    width: 220px;
+  }
+  .work-box .picture {
+    width: 220px;
+    height: 150px;
+  }
+  .top-header .text font {
+    font-size: 20pt;
+  }
+  .personal-box .personal .sticker img {
+    width: 200px;
+  }
+  .personal-box .personal .sticker {
+    padding: 34px 28px;
+  }
+  .personal-box .personal .content {
+    padding: 34px 28px;
+  }
+  .personal-box .personal .content .tw-txt .txt {
+    font-size: 12px;
+  }
+  .personal-box .personal .content .en-txt .txt {
+    font-size: 20px;
+  }
+  .work-box {
+    margin-top: 0;
+  }
+  .work-box .picture .float-txt {
+    font-size: 20px;
+  }
+  .work-box .title {
+    font-size: 12px;
+  }
+  .work-box .txt {
+    font-size: 12px;
+  }
 }
 
 @media only screen and (max-width: 1440px) and (min-width: 735px) {
@@ -7,14 +121,8 @@
 @media only screen and (max-width: 1440px) and (min-width: 1069px) and (-webkit-min-device-pixel-ratio: 1.5) {
 }
 
-@media only screen and (max-width: 1440px) and (min-width: 1069px) {
-}
-
 @media only screen and (max-width: 1068px) {
 }
 
 @media only screen and (max-width: 1068px) and (min-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5) {
-}
-
-@media only screen and (max-width: 1068px) and (min-width: 735px) {
 }

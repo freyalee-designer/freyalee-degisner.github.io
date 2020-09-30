@@ -2,4 +2,94 @@
 }
 
 @media only screen and (max-width: 734px) {
+  .section-width {
+    width: 100%;
+  }
+  .top-header .text {
+    padding: 0;
+    width: 100%;
+    display: table;
+  }
+  .top-header .text font {
+    display: table;
+    margin: 0 auto;
+  }
+  .top-header {
+    width: 273px;
+  }
+  .work-box {
+    justify-content: center;
+  }
+  .title .int-box img {
+    transform: translateY(2px);
+  }
+  .title-box .int-box {
+    padding: 8px 14px;
+    width: 280px;
+    margin: 5px auto;
+  }
+  .title-box .int-box font {
+    margin: 0 17px;
+    font-size: 12px;
+  }
+  .title-box .title {
+    font-size: 30px;
+    padding: 20px 60px 0;
+  }
+  .work-box .works {
+    margin-top: 20px;
+    width: 273px;
+  }
+  .work-box .picture {
+    width: 273px;
+    height: 160px;
+  }
+  .top-header .text font {
+    font-size: 20pt;
+  }
+  .personal-box .personal .sticker img {
+    width: 200px;
+  }
+  .personal-box .personal .sticker {
+    padding: 20px 0;
+    text-align: center;
+  }
+  .personal-box .personal .content {
+    padding: 20px 28px;
+  }
+  .personal-box .personal .content .tw-txt .txt {
+    font-size: 12px;
+  }
+  .personal-box .personal .content .en-txt .txt {
+    font-size: 20px;
+  }
+  .work-box {
+    margin-top: 0;
+  }
+  .work-box .picture .float-txt {
+    font-size: 20px;
+  }
+  .work-box .title {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  .work-box .txt {
+    font-size: 12px;
+  }
+  .personal-box .personal .straight {
+    display: none;
+  }
+  .personal-box {
+    margin-top: 35.5px;
+    width: 273px;
+  }
+  .personal-box .personal {
+    display: table;
+  }
+  .mb-show {
+    display: block !important;
+    &.header-box {
+      display: flex !important;
+    }
+  }
 }
