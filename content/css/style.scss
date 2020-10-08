@@ -25,10 +25,10 @@ $pink: #f7a6b9;
 .footer {
   background: $pink;
   color: #fff;
-  font-size: 10pt;
+  font-size: 8pt;
   padding: 6px 0;
   text-align: center;
-  width: 100%;
+  width: 100% !important;
 }
 .mb-show {
   display: none !important;
@@ -67,7 +67,7 @@ $pink: #f7a6b9;
   .text {
     display: flex;
     justify-content: space-between;
-    padding: 0px 0 0 55px;
+    padding: 0px 55px;
     font {
       font-size: 30pt;
       color: #fff;
@@ -86,19 +86,22 @@ $pink: #f7a6b9;
 }
 
 .title-box {
+  display: table;
+  margin: 0 auto;
+  width: auto;
   .title {
-    padding: 38.5px 220px 0;
+    // padding: 38.5px 220px 0;
     font-size: 120px;
     color: #fff;
+    letter-spacing: 8px;
     font {
       color: $pink;
     }
   }
   .int-box {
-    padding: 7px 73px;
+    padding: 7px 18px;
     background-color: $pink;
     display: table;
-    margin: 0 220px;
     font {
       margin: 0 40px;
       font-size: 16px;
@@ -146,6 +149,7 @@ $pink: #f7a6b9;
 
 .personal-box {
   margin-top: 83.5px;
+  margin-bottom: 83.5px;
   .header-box {
     display: flex;
     justify-content: center;
