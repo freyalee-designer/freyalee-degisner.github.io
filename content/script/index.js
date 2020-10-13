@@ -20,7 +20,7 @@ var app = new Vue({
   created() {
     const vm = this;
     vm.$nextTick(function() {
-      axios.get("/content/json/data.json").then((response) => {
+      axios.get("content/json/data.json").then((response) => {
         console.log(response);
         vm.workData = response.data.data;
       });
